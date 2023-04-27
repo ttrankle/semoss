@@ -9,10 +9,9 @@
  - Run pixel and get the json response.
 
 ## **Install**
-
-    ```r
-    devtools::install_github("ttrankle/semoss")
-    ```
+```r
+devtools::install_github("ttrankle/semoss")
+```
 
 
 ## **Usage**
@@ -61,7 +60,7 @@ TRUE
 >>> pixel = 'Database ( database = [ "995cf169-6b44-4a42-b75c-af12f9f45c36" ] ) | Select ( DIABETES__AGE , DIABETES__PATIENT , DIABETES__WEIGHT ) .as ( [ AGE , PATIENT , WEIGHT ] ) | Distinct ( false ) | Collect(-1)'
 
 # use getDataFrameFromTaskData method with the pixel command to create a Pandas DataFrame
->>> df = getDataFrameFromTaskData(industryPixel)
+>>> df = getDataFrameFromTaskData(pixel)
 >>> head(df)
 ```
 |    |   AGE |   PATIENT |   WEIGHT |
